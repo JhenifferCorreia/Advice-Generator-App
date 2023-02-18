@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+.mySocial {
+    bottom: 0;
+    position: fixed;
+    margin: 10px;
+}
+
+.mySocial a {
+    text-decoration: none;
+    color: hsl(150, 100%, 66%);
+}
+
+.card {
+    width: 550px;
+    height: 350px;
+    background-color: #313A49;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.advice {
+    color: hsl(150, 100%, 66%);
+    font-size: 14px;
+    letter-spacing: 0.3em;
+}
+
+.quote {
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    width: 80%;
+}
+
+.divisor {
+    padding: 25px;
+}
+
+.dice {
+    padding: 1.25rem;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(150, 100%, 66%);
+    cursor: pointer;
+    display: block;
+    transition: ease 0.2s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2rem;
+}
+
+.dice:hover {
+    color: #111;
+    background: hsl(150, 100%, 66%);
+    box-shadow: 0 0 20px hsl(150, 100%, 66%);
+}
+
+@media screen and (max-width: 640px) and (min-width: 375px) {
+    .card {
+        width: 90%;
+        height: 40%px;
+
+    }
+
+    .quote {
+        font-size: 24px;
+    }
+
+    .divisor {
+        height: 60px;
+    }
+}
